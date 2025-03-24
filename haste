@@ -31,7 +31,7 @@ from os.path import expanduser
 from requests.exceptions import Timeout
 from sys import stdin, exit
 
-CONFIGS = [expanduser('~/.hastec'), '/etc/hastec.conf']
+CONFIGS = [expanduser('~/.config/hastec'), expanduser('~/.hastec'), '/etc/hastec.conf']
 DEFAULTS = {
     'server_url': "https://hastebin.com",
     'timeout': 3
